@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>MGT_CustomRegion</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">(OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>An useful extension allow user to manage directory_country_region table</summary>
+    <description>An useful extension allow user to manage directory_country_region table</description>
+    <notes>Release version 1.0</notes>
+    <authors><author><name>Tuan Nguyen</name><user>kio2212</user><email>truongtuanlk@yahoo.com</email></author></authors>
+    <date>2016-10-22</date>
+    <time>12:52:27</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="MGT_CustomRegion.xml" hash="71e404636790879c9d57af626388e21d"/></dir></target><target name="magecommunity"><dir name="MGT"><dir name="CustomRegion"><dir><dir name="Block"><dir name="Adminhtml"><dir name="Region"><dir name="Edit"><file name="Form.php" hash="92834580b3d77a930a812a04d5db9da0"/></dir><file name="Edit.php" hash="4c5c369de13c3016631137b1128f2c5f"/><file name="Grid.php" hash="a451edb9ca0075c4158aeae8335a974c"/></dir><file name="Region.php" hash="42c6d16740fd24faa12e37e7eaf51089"/></dir></dir><dir name="Helper"><file name="Data.php" hash="a82f432f3e58fbeb24f54aac8c908c8a"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="RegionController.php" hash="5d5e22f6d43f4a42d4f31be243ae9a7a"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="eeba3fd3e43db154e8e8c1501de3df5c"/><file name="config.xml" hash="03044876e6d1b39ad0ee360a13a570c4"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.6.0</min><max>7.0.0</max></php><package><name>Mage_Directory</name><channel>community</channel><min>1.6.0.0</min><max>1.9.2</max></package></required></dependencies>
+</package>

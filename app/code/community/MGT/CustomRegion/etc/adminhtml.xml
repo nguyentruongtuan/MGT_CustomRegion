@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <customregion translate="title" module="customregion">
+            <title>Directory</title>
+            <sort_order>76</sort_order>
+            <children>
+                <region translate="title" module="customregion">
+                    <title>Region</title>
+                    <sort_order>0</sort_order>
+                    <action>directory_admin/region</action>
+                </region>
+            </children>
+        </customregion>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <customregion translate="title" module="customregion">
+                        <title>Manage Directory</title>
+                        <sort_order>76</sort_order>
+                        <children>
+                            <region translate="title" module="customregion">
+                                <title>Custom Region</title>
+                                <sort_order>0</sort_order>
+                                <action>directory_admin/region</action>
+                            </region>
+                        </children>
+                    </customregion>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

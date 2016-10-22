@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <MGT_CustomRegion>
+            <version>0.0.1</version>
+        </MGT_CustomRegion>
+    </modules>
+
+    <global>
+        <helpers>
+            <customregion>
+                <class>MGT_CustomRegion_Helper</class>
+            </customregion>
+        </helpers>
+        <blocks>
+            <customregion>
+                <class>MGT_CustomRegion_Block</class>
+            </customregion>
+        </blocks>
+        <models>
+            <customregion>
+                <class>MGT_CustomRegion_Model</class>
+            </customregion>
+        </models>
+    </global>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mgt_customregion>
+                    <file>customregion.xml</file>
+                </mgt_customregion>
+            </updates>
+        </layout>
+    </adminhtml>
+    <admin>
+        <routers>
+            <mgt_customregion>
+                <use>admin</use>
+                <args>
+                    <module>MGT_CustomRegion_Adminhtml</module>
+                    <frontName>directory_admin</frontName>
+                </args>
+            </mgt_customregion>
+        </routers>
+    </admin>
+
+</config>
